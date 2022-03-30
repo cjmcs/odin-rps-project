@@ -1,31 +1,29 @@
-
-////COMPUTER SELECTION////
-//define list of playable characters
-//randomly select a character from list of playable characters
-//print assigned character
-
-
-
-let humanScore = 0
-let computerScore = 0
-
 function computerPlay() {
-    const rpsAction = ['Rock', 'Paper', 'Scissors'];
-    // console.log(characters)
+    const rpsAction = ['rock', 'paper', 'scissors'];
+    console.log(rpsAction)
     let computerSelection = rpsAction[Math.floor(Math.random() * rpsAction.length)];
     console.log(`computer choice is ${computerSelection}`)
     return computerSelection;
+    
 }
 
-computerPlay()
-
-function humanPlay(){
+function humanPlay() {
     let humanSelection = prompt('Rock Paper or Scissors')
     humanSelection = humanSelection.toLowerCase()
     console.log(`human choice is ${humanSelection}`)
-    return  humanSelection;
-    }
-    
-    humanPlay()
+    return humanSelection;
+   }
 
-   
+const computerSelection = computerPlay()
+const humanSelection = humanPlay()
+
+
+
+function playRound() {
+        //add code here
+     // console.log(`compjjuter selection is ${computerSelection} and human selection is ${humanSelection}`)
+
+}
+
+playRound(computerSelection, humanSelection)
+console.log(`computer selection is ${computerSelection} and human selection is ${humanSelection}`)
